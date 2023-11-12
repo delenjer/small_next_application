@@ -1,0 +1,27 @@
+.product {
+  @apply flex flex-col border border-solid rounded-xl bg-white p-6 shadow-[0px_4px_6px_-2px_rgba(16,24,40,0.03),0px_12px_16px_-4px_rgba(16,24,40,0.08)];
+}
+
+.productContent {
+  flex-grow: 1;
+}
+
+.imgBox {
+  @apply relative w-full h-[325px] mb-6;
+}
+
+.productTitle {
+  @apply text-base font-bold text-black leading-6 mb-4;
+}
+
+.price {
+  @apply text-sm font-bold mb-4;
+}
+
+.description {
+  @apply text-sm font-normal leading-6 text-gray-500 line-clamp-3 mb-4;
+}
+
+.img {
+  border-radius: 12px 12px 0 0;
+}

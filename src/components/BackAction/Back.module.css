@@ -1,0 +1,20 @@
+.back {
+  @apply block relative max-w-max border border-black rounded-xl py-2 pl-12 pr-6 mb-12;
+}
+
+.back:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(10%, -50%);
+  width: 40px;
+  height: 40px;
+  background: url("../../../public/images/icons/arrow.svg") no-repeat center;
+  transition: transform 0.3s;
+}
+
+.back:hover:after {
+  transform: translate(2%, -50%);
+}
+

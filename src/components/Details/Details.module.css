@@ -1,0 +1,27 @@
+.details {
+  @apply flex items-start gap-6;
+}
+
+.detailsSection {
+  @apply w-full border border-solid rounded-xl bg-white p-6 mt-6 shadow-[0px_4px_6px_-2px_rgba(16,24,40,0.03),0px_12px_16px_-4px_rgba(16,24,40,0.08)];
+}
+
+.detailsImgBox {
+  @apply relative w-full max-w-[400px] h-[400px];
+}
+
+.title {
+  @apply text-2xl font-bold mb-6;
+}
+
+.detailsHolder {
+  @apply flex items-center font-semibold mb-6;
+}
+
+.text {
+  @apply font-normal ml-2;
+}
+
+.rating {
+  @apply text-2xl font-normal ml-2;
+}

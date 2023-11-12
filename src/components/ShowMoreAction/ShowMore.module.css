@@ -1,0 +1,3 @@
+.showMore {
+  @apply block w-full p-4 text-center text-white bg-black transition hover:opacity-60;
+}
