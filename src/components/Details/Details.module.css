@@ -1,5 +1,9 @@
 .details {
   @apply flex items-start gap-6;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
 }
 
 .detailsSection {

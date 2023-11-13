@@ -1,4 +1,4 @@
-import  {FC} from 'react';
+import {FC} from 'react';
 
 import {ProductDto} from '@/models/models';
 import Image from 'next/image';

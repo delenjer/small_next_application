@@ -8,14 +8,12 @@ type ProductsProps = {
   products: ProductDto[],
 }
 
-export const Products:FC<ProductsProps> = ({ products }) => {
-  return (
-    <div className={styles.products}>
-      {
-        products?.map((product) => (
-          <Product key={product.id} product={product} />
-        ))
-      }
-    </div>
-  )
-}
+export const Products:FC<ProductsProps> = ({ products }) => (
+  <div className={styles.products}>
+    {
+      products?.map((product) => (
+        <Product key={product.id} product={product} />
+      ))
+    }
+  </div>
+)

@@ -5,7 +5,7 @@ const getProducts = async () => {
   const res = await fetch(BASE_URL);
 
   if (!res.ok) {
-    throw new Error('Failed to fetch data')
+    return [];
   }
 
   return res.json();
@@ -17,7 +17,7 @@ export default async function Home() {
   return (
     <div className="bg-[#EBECF0]">
       <main className="p-6">
-        <Products products={products} />
+        <Products products={products} data-testid="products" />
       </main>
     </div>
   )

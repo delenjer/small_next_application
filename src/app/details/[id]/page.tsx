@@ -10,7 +10,7 @@ const getProductDetails = async (id:string) => {
   const res = await fetch(`${BASE_URL}/${id}`, { cache: 'no-store' });
 
   if (!res.ok) {
-    throw new Error('Failed to fetch data');
+    return [];
   }
 
   return res.json();
@@ -18,8 +18,6 @@ const getProductDetails = async (id:string) => {
 
 export default async function Page({ params }: ParamsProps) {
   const details = await getProductDetails(params.id);
-
-  console.log(details);
 
   return (
     <main className="p-6">
